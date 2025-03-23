@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="style.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,24 +20,41 @@
       crossorigin="anonymous"
     />
  <title>portfolio</title>
+
+ <style>
+  body{
+    background-color: rgb(144, 144, 223);
+    font-family: cursive;
+  }
+  .body-color{
+    background-color: rgb(144, 144, 223);
+  }
+  .skill-list ul{
+    list-style: none;
+  }
+  #header{
+    background-color: rgb(85, 85, 185);
+  }
+ </style>
+
   </head>
   <body>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid  " id="header">
       <div class="row position-static">
         <div class="col-sm-3 py-3 text-center">
           <a href="home"><b>HOME</b></a>
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 text-center py-2">
           <h2><strong> I'm radia sabahat, a web developer...</strong></h2>
         </div>
-        <div class="col-sm-3 py-3 text-right">
-          <button class="bg-primary">services</button>
+        <div class="col-sm-3 py-3  text-right">
+          <button class="bg-primary  btn border-white">services</button>
         </div>
       </div>
     </div>
 
-    <div class="m-5">
-      <div class="container-fluid bg-warning">
+    <div class="my-4 mx-5 body-color">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm">
             <div>
@@ -60,8 +78,8 @@
             />
             <h1><strong>Radia sabahat</strong></h1>
           </div>
-          <div class="col-sm">
-            <div class="skill-list">
+          <div class="col-sm ">
+            <div class="skill-list text-center py-5">
               <h2 class="">Skills</h2>
 
               <ul>
@@ -83,7 +101,7 @@
         </div>
       </div>
 
-      <div class="container-fluid bg-success">
+      <div class="container-fluid ">
         <div class="row">
           <div class="col-sm text-center">
             <h2>
@@ -95,13 +113,13 @@
           </div>
 
           <div class="col-sm text-center">
-            <div>
+            <div class="skill-list">
               <h2 class="contact">
                 <img src="star-.png" alt="=>" width="25" /><strong
                   >Personal Projects</strong
                 >
               </h2>
-              <ul>
+              <ul >
                 <li>
                   eco_eats
                   <hr class="line-one" />
@@ -114,7 +132,7 @@
             </div>
           </div>
           <div class="col-sm text-center">
-            <div class="contact">
+            <div class="contact pb-3">
               <img src="star-.png" alt="=>" width="25" />
               <strong>Contact me</strong>
               <p>you can contact me by clicking the button</p>
@@ -123,10 +141,10 @@
           </div>
         </div>
       </div>
-      <div class=" bg-secondary">
+      <div class="container-fluid ">
         <div class="row">
-          <div class="col-sm  ">
-            <div class="card bg-warning m-5  text-center  " style="width: 20rem  ">
+          <div class="col-sm py-5 ">
+            <div class="card bg-warning  py-2 text-center  " style="width: 20rem  ">
               <h1>radia Sabahat</h1>
               <img class="text-center " src="fppb_l6cx_231110.jpg" alt="John"  />
     
@@ -145,38 +163,40 @@
           </div>
          
           <div class="col-sm py-5 ">
-            <div class="card  bg-light  border-warning">
-          <h2 class="text-center">
-           Skills 
-          </h2>
-          <div class="text-left"  style="white-space: pre-wrap;"> 
-          <div>
-                i feeling glad by informing you that  my Html skills are 
-                much strong i am practicing html for three years . I 
-                have a good commmand on all tags of html.
+            <div class="card px-3 py-4 bg-warning">
+              <div class="card-body py-3">
+                  <div class="mb-3 d-flex align-items-center">
+                      <img src="HTML5.png" alt="HTML5" class="me-3" style="width: 21%;">
+                      <p class="mb-0">
+                          I feel glad to inform you that my HTML skills are strong. I have been practicing HTML for three years 
+                          and have a good command of all HTML tags.
+                      </p>
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                      <img src="CSS-Logo.png" alt="CSS" class="me-3" style="width: 17%;">
+                      <p class="mr-2">
+                          Right now, you are viewing my portfolio website, which is designed and styled using only CSS properties. 
+                          I have a strong grip on CSS, especially when it comes to front-end design.
+                      </p>
+                  </div>
+                  <div class="d-flex align-items-center">
+                      <img src="react.png" alt="React" class="me-3" style="width: 20%;">
+                      <p class="mb-0">
+                          I am fluent in using the React framework and can create single-page applications with a focus on 
+                          performance and maintainability.
+                      </p>
+                  </div>
               </div>
-              <div>
-                Right now you are watching my portfolio website and 
-                it's design and decorated using only CSS properties I 
-                have a strong grip on CSS when it cmes to designing
-                front-end of a website
-              </div>
-              <!-- <div>
-                i am much fluent in using the react frame-work and  
-                I can create single-page applications  with a focus
-                on performance and maintainability.
-              </div> -->
-              </div>
-            </div>
           </div>
-          <div class="col-sm border-warning">
-            <div class="card m-5 py-2 bg-primary">
+          </div>
+          <div class="col-sm ">
+            <div class="card m-5 py-2 bg-warning">
               <h1>My Acheivements</h1>
               <img src="card img.jpg" alt="John" style="width: 100%" />
     
               <div style="padding: 15px">
                 <!-- <p class="title">react developer</p> -->
-                <p class="para">
+                <p class="pt-3">
                   i am a beginer level developer and 
                   currently i'm doing basic level frontend
                   web  projects and i have design a lot of 
